@@ -1,0 +1,11 @@
+{
+    "id": "2026-03-15T17-41-05",
+    "name": "New Conversation",
+    "created_at": "2026-03-15T17-41-05",
+    "updated_at": "2026-03-15T17-43-39",
+    "model": {
+        "provider": "ollama",
+        "model": "devstral-small-2:24b-cloud"
+    },
+    "base_directory": "workspace"
+}
