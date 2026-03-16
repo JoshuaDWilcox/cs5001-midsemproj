@@ -1,0 +1,85 @@
+============================================================
+  Orchestral AI — Scientific Research Workflow
+  ASTER-Inspired (Section 7.2) | orchestral-ai v1.3.0       
+============================================================
+
+  [1/8] Query Exoplanet Catalog
+       🌍 Available Exoplanets in Catalog:
+       
+         Name            Temp (K)   Mass (Mj)    Description
+         --------------- ---------- ------------ ------------------------------
+         WASP-39b        1166       0.2800       Hot Saturn, JWST target
+         HD 209458b      1449       0.7300       First transiting exoplanet
+         TRAPPIST-1e     251        0.0022       Habitable zone rocky planet
+         55 Cancri e     2573       0.0254       Super-Earth, lava world
+         GJ 1214b        596        0.0204       Sub-Neptune, water world
+
+  [2/8] Retrieve WASP-39b Data
+       📡 Planetary Data Retrieved: WASP-39b
+       ```json
+       {
+         "name": "WASP-39b",
+         "host_star": "WASP-39",
+         "discovery_year": 2011,
+         "mass_jupiter": 0.28,
+         "radius_jupiter": 1.27,
+         "orbital_period_days": 4.055,
+         "equilibrium_temp_k": 1166,
+         "distance_pc": 213.9,
+         "detection_method": "Transit",
+         "atmosphere": "H2O, CO2, SO2, Na, K detected (JWST)"
+       }
+       ```
+
+  [3/8] Compute Transit Depth
+       🌑 Transit Depth Calculation:
+         Planet radius:  1.270 R_Jupiter (0.1276 R_Sun)
+         Star radius:    0.895 R_Sun
+         Transit depth:  2.0333%
+         Assessment:     easily detectable from ground
+
+  [4/8] Estimate Habitable Zone (WASP-39)
+       🟢 Habitable Zone Estimate:
+         Star temperature:  5485 K
+         Star luminosity:   0.7500 L_Sun
+         Inner HZ boundary: 0.826 AU
+         Outer HZ boundary: 1.443 AU
+         HZ width:          0.618 AU
+
+  [5/8] Statistical Analysis (Equilibrium Temps)
+       📊 Statistical Analysis: Equilibrium Temps (K) (n=5)
+         ──────────────────────────────
+         Mean:          1207.0000
+         Median:        1166.0000
+         Std Deviation: 801.6805
+         Min:           251.0000
+         Max:           2573.0000
+         25th %-ile:    596.0000
+         75th %-ile:    1449.0000
+         IQR:           853.0000
+
+  [6/8] Generate Scatter Plot
+       📈 Plot saved to: workspace\plot_20260315_191103.png
+         Title: Exoplanet Mass vs Equilibrium Temperature
+         Type: scatter
+         Data points: 5
+
+  [7/8] Save Research Note
+         File: workspace\note_wasp-39b_transit_analysis_20260315_191103.md
+         Title: WASP-39b Transit Analysis
+         Tags: exoplanet, WASP-39b, transit, JWST
+
+  [8/8] Agent Conversational Analysis
+       **Key Takeaways:**
+       1. WASP-39b's atmosphere contains water vapor, carbon dioxide, sulfur dioxide, sodium, and potassium, indicating a diverse and chemically active environment.
+       2. The high equilibrium temperature (1166K) suggests strong atmospheric dynamics and potential thermal dissociation of molecules.
+
+       **Follow-up Observation:**
+       Use JWST's NIRSpec to measure the abundance of CO and CH4 to constrain the planet's carbon-to-oxygen ratio and formation history.
+
+       📊 Cost: $0.000000 (Ollama = $0 actual)
+
+============================================================
+  ✅ COMPLETE — All 8 Orchestral AI concepts demonstrated
+  Check workspace/ for plots and notes!
+============================================================
